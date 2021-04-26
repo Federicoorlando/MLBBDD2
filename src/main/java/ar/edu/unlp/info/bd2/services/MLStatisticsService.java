@@ -113,12 +113,12 @@ public interface MLStatisticsService {
     /**
      * @return el onDeliveryPayment que mayor vuelto debe dar
      */
-    OnDeliveryPayment getMoreReturnOnDeliveryMethod();
+    OnDeliveryPayment getMoreChangeOnDeliveryMethod();
     
     /**
      * @return el producto más pesado
      */
-    Product getMoreWeightProduct();
+    Product getHeaviestProduct();
 
     
     /**
