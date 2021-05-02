@@ -67,14 +67,14 @@ public class MLStatisticsTestCase {
     public void testGetUsersSpendingMoreThanInPurchase() {
     	List<User> users = this.service.getUsersSpendingMoreThanInPurchase(Float.valueOf(920000F));
     	assertEquals(3,users.size());
-    	this.assertListEquality(users.stream().map(property -> property.getUsername()).collect(Collectors.toList()),Arrays.asList("carlospascual402@hotmail.com","matiasgarca37@hotmail.com","maracalvo55@yahoo.com"));
+    	this.assertListEquality(users.stream().map(property -> property.getEmail()).collect(Collectors.toList()),Arrays.asList("carlospascual402@hotmail.com","matiasgarca37@hotmail.com","maracalvo55@yahoo.com"));
     }
     
     @Test
     public void testGetUsersSpendingMoreThan() {
     	List<User> users = this.service.getUsersSpendingMoreThan(Float.valueOf(1900000.00F));
     	assertEquals(3,users.size());
-    	this.assertListEquality(users.stream().map(property -> property.getUsername()).collect(Collectors.toList()),Arrays.asList("santiagoserrano157@yahoo.com","santiagomartin638@yahoo.com","florenciaalonso505@yahoo.com"));
+    	this.assertListEquality(users.stream().map(property -> property.getEmail()).collect(Collectors.toList()),Arrays.asList("santiagoserrano157@yahoo.com","santiagomartin638@yahoo.com","florenciaalonso505@yahoo.com"));
     }
     
     @Test
@@ -95,7 +95,7 @@ public class MLStatisticsTestCase {
     public void testGetTopNUsersMorePurchase() {
     	List<User> users = this.service.getTopNUsersMorePurchase(7);
     	assertEquals(7,users.size());
-    	this.assertListEquality(users.stream().map(property -> property.getUsername()).collect(Collectors.toList()),Arrays.asList("silviasez428@gmail.com","matiasherrero831@gmail.com","santiagoserrano157@yahoo.com","silviaromero99@me.com","florenciaalonso505@yahoo.com","paulacaballero154@yahoo.com","paulamorales955@yahoo.com"));
+    	this.assertListEquality(users.stream().map(property -> property.getEmail()).collect(Collectors.toList()),Arrays.asList("silviasez428@gmail.com","matiasherrero831@gmail.com","santiagoserrano157@yahoo.com","silviaromero99@me.com","florenciaalonso505@yahoo.com","paulacaballero154@yahoo.com","paulamorales955@yahoo.com"));
 
     }
     
